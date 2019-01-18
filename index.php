@@ -1,7 +1,7 @@
 <?php
-var_dump("hoge");
+//var_dump("hoge");
 if(true) {
   continue;
 }
-
+//aa
 echo "hogaeaaaaa";
