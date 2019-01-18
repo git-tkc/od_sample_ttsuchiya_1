@@ -2,6 +2,8 @@
 //var_dump("hoge");
 if(true) {
   continue;
+} else {
+	echo 1;
 }
-//aa
+//aaa
 echo "hogaeaaaaa";
