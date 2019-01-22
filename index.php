@@ -1,7 +1,7 @@
 <?php
 //var_dump("hoge");
 if(true) {
-  continue;
+  //continue;
 } else {
 	echo 1;
 }
