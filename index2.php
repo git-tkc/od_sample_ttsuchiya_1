@@ -6,3 +6,4 @@ var_dump("hogea");
 */
 
 echo "nya-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^";
+echo "ugoooooooooooooooooooooo";
