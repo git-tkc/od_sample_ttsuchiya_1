@@ -7,3 +7,5 @@ if(true) {
 }
 //aaa
 echo "hogaeaaaaa";
+//bbb
+echo "AAAAAAAAAAAAAAAAAAAAAA";
