@@ -22,5 +22,5 @@ jobs:
       env:
         SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
       with:
-        args: '{\"channel\":\"CTP90F42H\",\"text\":\"GitHub Actions FAILURE\",\"attachments\":[{\"text\": \"GitHub Actions でエラーが発生しました (open) %0A%0Arepo [`${{ github.repository }}`] %0Aworkflow [`${{ github.workflow }}`] %0Astep [`all php files syntax check`] %0A\",\"color\":\"danger\"}]}'
+        args: '{\"channel\":\"CTP90F42H\",\"text\":\"GitHub Actions FAILURE\",\"attachments\":[{\"text\": \"GitHub Actions でエラーが発生しました (open) \n\n - repo [`${{ github.repository }}`] \n - workflow [`${{ github.workflow }}`] \n - step [`all php files syntax check`] \n\",\"color\":\"danger\"}]}'
 
