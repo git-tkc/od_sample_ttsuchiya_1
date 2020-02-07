@@ -14,3 +14,9 @@ jobs:
     - name: all php files syntax check
       run: find ./ -type f -name "*.php" | xargs -n1 php -l
 
+    - name: Post Slack messages
+      uses: pullreminders/slack-action@v1.0.7
+      env:
+        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+      with:
+        args: '{\"channel\":\"CTP90F42H\",\"text\":\"Hello world\"}'
