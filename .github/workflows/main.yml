@@ -18,7 +18,7 @@ jobs:
 
     - name: Post Slack messages
       if: always()
-      uses: pullreminders/slack-action@v1
+      uses: pullreminders/slack-action@master
       with:
         args: '{\"channel\":\"CTP90F42H\",\"text\":\"Hello world\"}'
       env:
