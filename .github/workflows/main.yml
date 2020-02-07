@@ -22,5 +22,5 @@ jobs:
       env:
         SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
       with:
-        args: '{\"channel\":\"CTP90F42H\",\"text\":\"GitHub Actions でエラーが発生しました\",\"attachments\":[{\"text\": \"GitHub Actions FAILURE (<https://github.com/git-tkc/od_sample_ttsuchiya_1/actions/|open>) \n\n - repo [`${{ github.repository }}`] \n - workflow [`${{ github.workflow }}`] \n - step [`all php files syntax check`] \n\",\"color\":\"danger\"}]}'
+        args: '{\"channel\":\"CTP90F42H\",\"text\":\"GitHub Actions でエラーが発生しました\",\"attachments\":[{\"text\": \"GitHub Actions FAILURE (<https://github.com/git-tkc/od_sample_ttsuchiya_1/actions/runs/${{ github.run_id }}|open>) \n\n - repo [`${{ github.repository }}`] \n - workflow [`${{ github.workflow }}`] \n - step [`all php files syntax check`] \n\",\"color\":\"danger\"}]}'
 
