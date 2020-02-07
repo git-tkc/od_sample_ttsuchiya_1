@@ -7,4 +7,4 @@ class hoge {
 		split(",", "aa,bb,cc");
 	}
 }
-kekekeke
+//kekekeke
