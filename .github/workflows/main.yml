@@ -3,19 +3,18 @@ name: CI
 on: [push]
 
 jobs:
-  build:
-
+  prepare:
     runs-on: ubuntu-latest
+    steps:
+      - name: check php version
+        run: php -v
 
+  build:
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-
-    - name: check php version
-      run: php -v
-
     - name: all php files syntax check
       run: find ./ -type f -name "*.php" | xargs -n1 php -l
-
     - name: post slack messages
       if: failure()
       uses: pullreminders/slack-action@master
