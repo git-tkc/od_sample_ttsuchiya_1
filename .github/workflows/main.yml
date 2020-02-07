@@ -22,5 +22,5 @@ jobs:
       env:
         SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
       with:
-        args: '{\"channel\":\"CTP90F42H\",\"text\":\"`${{ github.repository }}/${{ github.workflow }}`\\n でエラーが発生しました - step:[all php files syntax check]\"}'
+        args: '{\"channel\":\"CTP90F42H\",\"text\":\"`repos:${{ github.repository }} / workflow:${{ github.workflow }}` でエラーが発生しました - step:[all php files syntax check]\"}'
 
