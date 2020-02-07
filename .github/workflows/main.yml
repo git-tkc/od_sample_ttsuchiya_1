@@ -9,6 +9,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: check php version
+      run: php -v
     - name: all php files syntax check
       run: find ./ -type f -name "*.php" | xargs -n1 php -l
 
