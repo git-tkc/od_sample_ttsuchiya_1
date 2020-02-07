@@ -20,6 +20,6 @@ jobs:
       if: failure()
       uses: pullreminders/slack-action@master
       with:
-        args: '{\"channel\":\"CTP90F42H\",\"text\":\"failed ci\"}'
+        args: '{\"channel\":\"CTP90F42H\",\"text\":\"失敗通知だけでも、はたして日本語は送信できるのか？？\"}'
       env:
         SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
